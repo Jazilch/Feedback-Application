@@ -9,8 +9,8 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"yarn run server\" \"yarn run client\"",
+    "client": "yarn react-scripts start --prefix client",
+    "dev": "concurrently \"npm start\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "James Zilch",
@@ -21,10 +21,11 @@
     "cookie-session": "^2.0.0-beta.3",
     "express": "^4.16.2",
     "mongoose": "^5.0.0-rc0",
-    "nodemon": "^1.14.7",
+    "nodemon": "^1.14.11",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
     "react-stripe-checkout": "^2.6.3",
+    "sendgrid": "^5.2.3",
     "stripe": "^5.4.0"
   }
 }
