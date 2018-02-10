@@ -38,7 +38,7 @@ const Landing = () => {
 					<p style={textStyles}>
 						Collect feedback from your users
 					</p>
-					<a class="waves-effect waves-light btn-large">button</a>
+					<a class="waves-effect waves-light btn-large">Get Started</a>
 				</div>
 			</div>
 		</div>

@@ -9,9 +9,10 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
-    "client": "yarn react-scripts start --prefix client",
-    "dev": "concurrently \"npm start\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "client": "yarn start --prefix client",
+    "dev": "concurrently \"npm start\" \"npm run client\" \"npm run webhook\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "webhook": "lt -p 5000 -s kfbdivbashba"
   },
   "author": "James Zilch",
   "license": "MIT",
@@ -20,10 +21,13 @@
     "concurrently": "^3.5.1",
     "cookie-session": "^2.0.0-beta.3",
     "express": "^4.16.2",
+    "localtunnel": "^1.8.3",
+    "lodash": "^4.17.5",
     "mongoose": "^5.0.0-rc0",
     "nodemon": "^1.14.11",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
+    "path-parser": "^3.0.1",
     "react-stripe-checkout": "^2.6.3",
     "sendgrid": "^5.2.3",
     "stripe": "^5.4.0"

@@ -7,6 +7,9 @@ import SurveyField from './SurveyField';
 import validateEmails from '../../utils/validateEmails';
 import formFields from './formFields';
 
+const formStyles = {
+	paddingTop: '25px'
+};
 class SurveyForm extends Component {
 	renderFields() {
 		return _.map(formFields, ({ label, name }) => {
@@ -16,7 +19,7 @@ class SurveyForm extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className="container" style={formStyles}>
 				<form onSubmit={this.props.handleSubmit(this.props.onSurveySubmit)}>
 					{this.renderFields()}
 					<Link to="/surveys" className="red btn-flat white-text">Cancel</Link>
