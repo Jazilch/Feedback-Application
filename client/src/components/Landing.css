@@ -1,0 +1,37 @@
+* {
+	box-sizing: border-box;
+}
+
+h1,h2, h3, h4, h5, p {
+	color: #fff;
+}
+
+
+.hero {
+	background-image: url('https://cdn2.hubspot.net/hubfs/2676636/Feedback_Application/images/landing_background.jpg');
+	background-size: cover;
+	position: relative;
+	height: 91vh;
+	padding-bottom: 8%;
+	text-align: center;
+	overflow-y: hidden;
+}
+
+.hero_overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0,0,0, 0.5);
+}
+
+.content_wrapper {
+	width: 75%;
+	margin: 0 auto;
+	padding-top: 10%;
+}
+
+.content_wrapper a {
+	margin-top: 3%;
+}
